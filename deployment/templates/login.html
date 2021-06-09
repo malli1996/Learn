@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Page Title</title>
+
+</head>
+
+<body>
+    <h1>Upload form</h1>
+    <div class="container" align="center">
+        <form action="" method="POST" enctype="multipart/form-data">{% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" class="btn btn-primary" name="" value="Upload">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

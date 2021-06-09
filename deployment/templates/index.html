@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hello world!</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="container">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required><br>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+            <button type="submit">submit</button><br>
+
+            <a href="{% url 'model_form_upload' %}">zipFileUpload</a>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
